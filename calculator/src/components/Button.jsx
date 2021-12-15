@@ -5,7 +5,7 @@ const valIsAnOperator = val =>{
     if(val === "." || val === "C" || val === "±" || val === "%")
     {
         return "other";
-    }else if(val === "/" || val === "X" || val === "-" || val === "+" || val === "=")
+    }else if(val === "/" || val === "x" || val === "-" || val === "+" || val === "=")
     {
         return "operator";
     }

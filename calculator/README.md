@@ -1,3 +1,11 @@
+Isaac Estrada
+CPSC 349 Final
+
+This is a React Calculator
+It also uses the mathjs library
+
+You can view some test screen shots in the "Test Screenshots" folder
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

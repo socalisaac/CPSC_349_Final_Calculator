@@ -1,9 +1,9 @@
 import './App.css';
 import {Button} from './components/Button';
 import {Input} from './components/Input';
-import { ClearButton } from './components/AllClearButton';
+import {ClearButton} from './components/AllClearButton';
 import React, {Component} from 'react';
-import * as math from 'mathjs'
+import * as math from 'mathjs' //Import Mathjs to complete calculations from a string
 
 class App extends Component{
   constructor(props){
@@ -18,7 +18,7 @@ class App extends Component{
   }
 
   handleEqual = () =>{
-    var equation = this.state.input.replace(/X/g, "*")
+    var equation = this.state.input.replace(/x/g, "*")
     this.setState({input: math.evaluate(equation)})
   }
 
@@ -41,7 +41,7 @@ class App extends Component{
             <Button handleClick = {this.addToInput}>7</Button>
             <Button handleClick = {this.addToInput}>8</Button>
             <Button handleClick = {this.addToInput}>9</Button>
-            <Button handleClick = {this.addToInput}>X</Button>
+            <Button handleClick = {this.addToInput}>x</Button>
           </div>
           <div className="row">
             <Button handleClick = {this.addToInput}>4</Button>
